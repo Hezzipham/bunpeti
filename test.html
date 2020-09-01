@@ -45,18 +45,21 @@
         </main>
     </div>
   <!--Practice REACT-->
-  <div id="mydiv" class="p-5 text-center"></div>
+  <div id="welcome" class="p-5 text-center"></div>
   <script type="text/babel">
-  
+  const Intro =() => {
+    return(<div><p>I am a web developer!</p></div>);
+  };
   class Hello extends React.Component {
     constructor(prop){
       super(prop);
     }
     render(){
-      return(<h1>Hi, my name is Hezzi</h1>);
+      return(<div><h1>Hi, my name is Hezzi</h1><Intro /></div>);
     }
-  }
-  ReactDOM.render(<Hello />, document.getElementById('mydiv'))
+  };
+
+  ReactDOM.render(<Hello />, document.getElementById('welcome'))
   </script>
 
 </body>
