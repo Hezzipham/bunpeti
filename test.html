@@ -47,15 +47,15 @@
   <!--Practice REACT-->
   <div id="welcome" class="p-5 text-center"></div>
   <script type="text/babel">
-  const Intro =() => {
-    return(<div><p>I am a web developer!</p></div>);
+  const Intro =(props) => {
+    return(<div><p>I am a web developer with {props.time.join(", ")} experience. </p></div>);
   };
   class Hello extends React.Component {
-    constructor(prop){
-      super(prop);
+    constructor(props){
+      super(props);
     }
     render(){
-      return(<div><h1>Hi, my name is Hezzi</h1><Intro /></div>);
+      return(<div><h1>Hi, my name is Hezzi</h1><Intro time = {["5 years", "4 months"]} /></div>);
     }
   };
 
