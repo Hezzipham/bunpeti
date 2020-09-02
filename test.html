@@ -58,8 +58,12 @@
       return(<div><h1>Hi, my name is Hezzi</h1><Intro time = {["5 years", "4 months"]} /></div>);
     }
   };
-
+ /* Default props vs propTypes
+  Intro.defaultProps = {time: "2 years"};
+  Intro.propTypes = {time: PropTypes.string.isRequired};
+*/
   ReactDOM.render(<Hello />, document.getElementById('welcome'))
+ 
   </script>
 
 </body>
