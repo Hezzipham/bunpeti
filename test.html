@@ -46,6 +46,8 @@
     </div>
   <!--Practice REACT-->
   <div id="welcome" class="p-5 text-center"></div>
+  <div id="services" class="p-5 text-center"></div>
+
   <script type="text/babel">
   const Intro =(props) => {
     return(<div><p>I am a web developer with {props.time.join(", ")} experience. </p></div>);
@@ -64,6 +66,16 @@
 */
   ReactDOM.render(<Hello />, document.getElementById('welcome'))
  
+ class Services extends React.Component {
+   constructor(props){
+     super(props);
+     this.state={platform: "web"}
+   }
+render(){
+  return(<p>I help design {this.state.platform} apps on smartphone.</p>);
+}
+ }
+ ReactDOM.render(<Services />, document.getElementById('services'))
   </script>
 
 </body>
