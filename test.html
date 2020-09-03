@@ -69,10 +69,10 @@
  class Services extends React.Component {
    constructor(props){
      super(props);
-     this.state={platform: "web"}
+     this.state={platform: "web and phone"}
    }
-render(){
-  return(<p>I help design {this.state.platform} apps on smartphone.</p>);
+render(){ const serviceplatform = this.state.platform;
+  return(<p>I help design {serviceplatform} apps on smartphone.</p>);
 }
  }
  ReactDOM.render(<Services />, document.getElementById('services'))
