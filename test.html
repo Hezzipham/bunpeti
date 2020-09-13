@@ -11,7 +11,7 @@
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-sm bg-light row fixed-top">
+    <nav class="navbar navbar-expand-sm bg-light row">
         <a class="navbar-brand col-md-2 text-center" href="#">
             <img src="hezzi.png" alt="logo" style="width:40px;">
           </a>
@@ -45,8 +45,11 @@
         </main>
     </div>
   <!--Practice REACT-->
+  <div id="click" class="p-5 text-center"></div>
+  <div id="counter" class="text-center"></div>
   <div id="welcome" class="p-5 text-center"></div>
   <div id="services" class="p-5 text-center"></div>
+  
 
   <script type="text/babel">
   const Intro =(props) => {
@@ -77,34 +80,74 @@ render(){ const serviceplatform = this.state.platform;
  }
  ReactDOM.render(<Services />, document.getElementById('services'))
 
- class MyComponent extends React.Component {
+/*Using this."function" = this."function".bind(this)*/
+ class MyButton extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       text: "Hello"
     };
-    // change code below this line
-this.handleClick = this.handleClick.bind(this)
-    // change code above this line
-  }
+
+this.handleClick = this.handleClick.bind(this);
+  
+  };
+
   handleClick() {
-    this.setState({
-      text: "You clicked!"
-    });
-  }
+    this.setState(state => 
+      {
+      if (state.text === "Hello"){
+        return { text: "Xin Chào!" }
+      }else {
+        return { text: "Hello"}
+        }  
+     })
+  };
+  
   render() {
     return (
       <div>
-        
-        <button onClick = {this.handleClick}>Click Me</button>
-        
+        <button onClick = {this.handleClick}>Language</button>
+
         <h1>{this.state.text}</h1>
       </div>
     );
   }
 };
+ReactDOM.render(<MyButton />, document.getElementById("click"))
 
-  </script>
-
+/* Counter */
+class Counter extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      count: 0
+    };
+    // change code below this line
+this.increment = this.increment.bind(this);
+this.decrement = this.decrement.bind(this);
+this.reset = this.reset.bind(this);
+    // change code above this line
+  }
+  // change code below this line
+increment(){this.setState(state=> ({count: state.count + 1}))
+};
+decrement(){this.setState(state=> ({count: state.count - 1}))
+};
+reset(){this.setState({count: 0})
+};
+  // change code above this line
+  render() {
+    return (
+      <div>
+        <button className='inc' onClick={this.increment}>Increment!</button>
+        <button className='dec' onClick={this.decrement}>Decrement!</button>
+        <button className='reset' onClick={this.reset}>Reset</button>
+        <h1>Current Count: {this.state.count}</h1>
+      </div>
+    );
+  }
+};
+ReactDOM.render(<Counter />, document.getElementById("counter"))
+</script>
 </body>
 </html>
