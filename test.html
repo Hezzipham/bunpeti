@@ -12,14 +12,17 @@
 </head>
 <body>
     <!--Practice REACT-->
-<div class="d-flex justify-content-around mb-3">
-  <div id="root" class="p-4 text-center"></div>
+<div class="row"> 
+  <div style="height:400px" id="player" class="p-4 text-center col-sm-4"></div> 
+  <div style="height:400px" id="game" class="p-4 text-center col-sm-8"></div>
+</div>
+<div class="d-flex justify-content-around mb-3">  
   <div id="click" class="p-4 text-center"></div>
   <div id="hiyou" class="p-4 text-center"></div>
   <div id="counter" class="p-4 text-center"></div>
 
 </div>
-  
+</body> 
 
   <script type="text/babel">
   const Intro =(props) => {
@@ -97,20 +100,20 @@ class Counter extends React.Component {
     this.state = {
       count: 0
     };
-    // change code below this line
+ 
 this.increment = this.increment.bind(this);
 this.decrement = this.decrement.bind(this);
 this.reset = this.reset.bind(this);
-    // change code above this line
+
   }
-  // change code below this line
+
 increment(){this.setState(state=> ({count: state.count + 1}))
 };
 decrement(){this.setState(state=> ({count: state.count - 1}))
 };
 reset(){this.setState({count: 0})
 };
-  // change code above this line
+
   render() {
     return (
       <div>
@@ -144,9 +147,8 @@ handleChange(event){
 
   render() {
     return (
-      <div>
-<h4>Your Email:</h4>      
-<input value={this.state.input} onChange ={this.handleChange.bind(this)}></input>
+      <div>    
+<input placeholder='Your Email' value={this.state.input} onChange ={this.handleChange.bind(this)}></input>
         <h6>Send from {this.state.input}</h6>
       </div>
     );
@@ -299,23 +301,54 @@ class Controller extends React.Component {
 }
 
 */
-const inputStyle = {
-  width: 235,
-  margin: 5
-};
+class Player extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      input: '',
+      submit: []
+    };
+    this.handleChange = this.handleChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
+  }
+  handleChange(event) {
+    this.setState({
+      input: event.target.value
+    });
+  }
+  handleSubmit(event) {
+    // PreventDefault
+    event.preventDefault();
+    this.setState({submit:this.state.input});
+  }
+  render() {
+    return (
+      <div>
+      <form onSubmit={this.handleSubmit}>
+        <input placeholder='Your Name' value={this.state.input} onChange={this.handleChange.bind(this)}></input>
+        <button className='class="btn btn-info"' type='submit'>Submit!</button>
+        </form>
+       <ol className='a'><h2>Player List</h2>
+        <li><h4>{this.state.submit}</h4></li>
+       </ol>
+      </div>
+    );
+  }
+}
+ReactDOM.render(<Player />, document.getElementById("player"))
 
 class TruthOrDare extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       userInput: '',
-      randomIndex: ''
+      randomIndex: '',
     };
     this.ask = this.ask.bind(this);
     this.handleChange = this.handleChange.bind(this);
   }
   ask() {
-    if (this.state.userInput) {
+    if(this.state.userInput) {
       this.setState({
         randomIndex: Math.floor(Math.random() * 20),
         userInput: ''
@@ -350,26 +383,25 @@ class TruthOrDare extends React.Component {
       "What’s the worst advice you’ve ever given someone else?",
       "What’s the most offensive joke you’ve found funny?"
     ];
-    const answer = possibleAnswers[this.state.randomIndex]; // << change code here
+    const question = possibleAnswers[this.state.randomIndex];
     return (
       <div>
         <h1>Truth Or Dare Game</h1>
-        <h4>Your Name</h4>
-        <input
-          type='text'
-          value={this.state.userInput}
-          onChange={this.handleChange}
-          style={inputStyle}
-        />
+        <select onChange={this.handleChange} placeholder="YO" name="player" id="player">
+            <option value='0' disabled>PLAYER</option>
+            <option value="player1">Player 1</option>
+            <option value="player2">Player 2</option>
+            <option value="player3">Player 3</option>
+            <option value="player4">Player 4</option>
+        </select>
+        <button onClick={this.ask}>'s Question</button>
         <br />
-        <button onClick={this.ask}>Question for {this.state.userInput}</button>
-        <br />
-        <h3>{answer}</h3>
+        <h3>{question}</h3>
       </div>
     );
   }
 }
-ReactDOM.render(<TruthOrDare />, document.getElementById('root'));
+ReactDOM.render(<TruthOrDare />, document.getElementById('game'));
 </script>
-</body>
+
 </html>
