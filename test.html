@@ -154,8 +154,28 @@ handleChange(event){
     );
   }
 };
+/*
+const GoodTime (props){
+const date = new Date()
+    const hours = date.getHours()
+    let timeOfDay
+    const styles ={
+      fontSize: 30
 
 
+    if (hours < 12){
+      timeOfDay = "morning"
+      styles.color = "blue"
+    }else if (12 >= hours && hours < 18){
+      timeOfDay = "afternoon"
+      styles.color = "orange"
+    }esle{
+      timeOfDay="night"
+      styles.color="red"
+    }
+    return (<h1 style={styles}>Good {timeOfDay}</h1>);
+  }
+    */
 
 class MyForm extends React.Component {
   constructor(props) {
@@ -178,6 +198,7 @@ class MyForm extends React.Component {
     this.setState({submit:this.state.input});
   }
   render() {
+
     return (
       <div>
       <form onSubmit={this.handleSubmit}>
