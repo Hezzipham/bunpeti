@@ -1,156 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <!--Bootstrap-->
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="test.css">
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" href="test.css" />
     <script src="test.js" type="text/label"></script>
     <!--To practice React-->
-  <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
-  <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
-  <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
-</head>
-<body>
+    <script src="https://unpkg.com/react@16/umd/react.production.min.js"></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+  </head>
+  <body>
     <!--Practice REACT-->
-<div class="d-flex justify-content-around mb-3">  
-  <div id="click" class="p-4 text-center"></div>
-  <div id="hiyou" class="p-4 text-center"></div>
-  <div id="counter" class="p-4 text-center"></div>
-
-</div>
-</body> 
+    <div class="d-flex justify-content-around mb-3">
+      <div id="click" class="p-4 text-center"></div>
+      <div id="hiyou" class="p-4 text-center"></div>
+      <div id="counter" class="p-4 text-center"></div>
+    </div>
+  </body>
 
   <script type="text/babel">
-  const Intro =(props) => {
-    return(<div><p>I am a web developer with {props.time.join(", ")} experience. </p></div>);
-  };
-  class Hello extends React.Component {
-    constructor(props){
-      super(props);
-    }
-    render(){
-      return(
+    const Intro = (props) => {
+      return (
         <div>
-        <h1>My name is Hezzi</h1>
-        <Intro time = {["5 years", "4 months"]} />
-        </div>);
+          <p>I am a web developer with {props.time.join(", ")} experience. </p>
+        </div>
+      );
+    };
+    class Hello extends React.Component {
+      constructor(props) {
+        super(props);
+      }
+      render() {
+        return (
+          <div>
+            <h1>My name is Hezzi</h1>
+            <Intro time={["5 years", "4 months"]} />
+          </div>
+        );
+      }
     }
-  };
- /* Default props vs propTypes
+    /* Default props vs propTypes
   Intro.defaultProps = {time: "2 years"};
   Intro.propTypes = {time: PropTypes.string.isRequired};
 */
- 
-//state example:
- class Services extends React.Component {
-   constructor(props){
-     super(props);
-     this.state={platform: "web and phone"}
-   }
-render(){ const serviceplatform = this.state.platform;
-  return(<p>I help design {serviceplatform} apps on smartphone.</p>);
-}
- }
- 
-/*Using this."function" = this."function".bind(this)*/
- class MyButton extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      text: "Hello"
-    };
 
-this.handleClick = this.handleClick.bind(this);
-  
-  };
+    //state example:
+    class Services extends React.Component {
+      constructor(props) {
+        super(props);
+        this.state = { platform: "web and phone" };
+      }
+      render() {
+        const serviceplatform = this.state.platform;
+        return <p>I help design {serviceplatform} apps on smartphone.</p>;
+      }
+    }
 
-  handleClick() {
-    this.setState(state => 
-      {
-      if (state.text === "Hello"){
-        return { text: "Xin Chào!" }
-      }else {
-        return { text: "Hello"}
-        }  
-     })
-  };
-  
-  render() {
-    return (
-      <div>
-        <button onClick = {this.handleClick}>Language</button>
+    /*Using this."function" = this."function".bind(this)*/
+    class MyButton extends React.Component {
+      constructor(props) {
+        super(props);
+        this.state = {
+          text: "Hello",
+        };
 
-        <h1>{this.state.text}</h1>
-        <Hello />
-        <Services />
-      </div>
-    );
-  }
-};
-ReactDOM.render(<MyButton />, document.getElementById("click"))
+        this.handleClick = this.handleClick.bind(this);
+      }
 
-/* Counter */
-class Counter extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      count: 0
-    };
- 
-this.increment = this.increment.bind(this);
-this.decrement = this.decrement.bind(this);
-this.reset = this.reset.bind(this);
+      handleClick() {
+        this.setState((state) => {
+          if (state.text === "Hello") {
+            return { text: "Xin Chào!" };
+          } else {
+            return { text: "Hello" };
+          }
+        });
+      }
 
-  }
+      render() {
+        return (
+          <div>
+            <button onClick={this.handleClick}>Language</button>
 
-increment(){this.setState(state=> ({count: state.count + 1}))
-};
-decrement(){this.setState(state=> ({count: state.count - 1}))
-};
-reset(){this.setState({count: 0})
-};
+            <h1>{this.state.text}</h1>
+            <Hello />
+            <Services />
+          </div>
+        );
+      }
+    }
+    ReactDOM.render(<MyButton />, document.getElementById("click"));
 
-  render() {
-    return (
-      <div>
-        <button className='inc' onClick={this.increment}>Increment!</button>
-        <button className='dec' onClick={this.decrement}>Decrement!</button>
-        <button className='reset' onClick={this.reset}>Reset</button>
-        <h1>Current Count: {this.state.count}</h1>
-      </div>
-    );
-  }
-};
-ReactDOM.render(<Counter />, document.getElementById("counter"))
+    /* Counter */
+    class Counter extends React.Component {
+      constructor(props) {
+        super(props);
+        this.state = {
+          count: 0,
+        };
 
+        this.increment = this.increment.bind(this);
+        this.decrement = this.decrement.bind(this);
+        this.reset = this.reset.bind(this);
+      }
 
-//Input control onChange() with states
-class ControlledInput extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      input: ''
-    };
-   
-this.handleChange = this.handleChange.bind(this);
+      increment() {
+        this.setState((state) => ({ count: state.count + 1 }));
+      }
+      decrement() {
+        this.setState((state) => ({ count: state.count - 1 }));
+      }
+      reset() {
+        this.setState({ count: 0 });
+      }
 
-  }
+      render() {
+        return (
+          <div>
+            <button className="inc" onClick={this.increment}>
+              Increment!
+            </button>
+            <button className="dec" onClick={this.decrement}>
+              Decrement!
+            </button>
+            <button className="reset" onClick={this.reset}>
+              Reset
+            </button>
+            <h1>Current Count: {this.state.count}</h1>
+          </div>
+        );
+      }
+    }
+    ReactDOM.render(<Counter />, document.getElementById("counter"));
 
-handleChange(event){
-  this.setState({input:event.target.value
-  });
-  };
+    //Input control onChange() with states
+    class ControlledInput extends React.Component {
+      constructor(props) {
+        super(props);
+        this.state = {
+          input: "",
+        };
 
-  render() {
-    return (
-      <div>    
-<input placeholder='Your Email' value={this.state.input} onChange ={this.handleChange.bind(this)}></input>
-        <h6>Send from {this.state.input}</h6>
-      </div>
-    );
-  }
-};
-/*
+        this.handleChange = this.handleChange.bind(this);
+      }
+
+      handleChange(event) {
+        this.setState({ input: event.target.value });
+      }
+
+      render() {
+        return (
+          <div>
+            <input
+              placeholder="Your Email"
+              value={this.state.input}
+              onChange={this.handleChange.bind(this)}
+            ></input>
+            <h6>Send from {this.state.input}</h6>
+          </div>
+        );
+      }
+    }
+    /*
 const GoodTime (props){
 const date = new Date()
     const hours = date.getHours()
@@ -173,46 +188,47 @@ const date = new Date()
   }
     */
 
-class MyForm extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      input: '',
-      submit: ''
-    };
-    this.handleChange = this.handleChange.bind(this);
-    this.handleSubmit = this.handleSubmit.bind(this);
-  }
-  handleChange(event) {
-    this.setState({
-      input: event.target.value
-    });
-  }
-  handleSubmit(event) {
-    // PreventDefault
-    event.preventDefault();
-    this.setState({submit:this.state.input});
-  }
-  render() {
+    class MyForm extends React.Component {
+      constructor(props) {
+        super(props);
+        this.state = {
+          input: "",
+          submit: "",
+        };
+        this.handleChange = this.handleChange.bind(this);
+        this.handleSubmit = this.handleSubmit.bind(this);
+      }
+      handleChange(event) {
+        this.setState({
+          input: event.target.value,
+        });
+      }
+      handleSubmit(event) {
+        // PreventDefault
+        event.preventDefault();
+        this.setState({ submit: this.state.input });
+      }
+      render() {
+        return (
+          <div>
+            <form onSubmit={this.handleSubmit}>
+              <ControlledInput value={this.state.input} />
+              <h4>Enter your message</h4>
+              <input
+                value={this.state.input}
+                onChange={this.handleChange.bind(this)}
+              ></input>
+              <button type="submit">Submit!</button>
+            </form>
 
-    return (
-      <div>
-      <form onSubmit={this.handleSubmit}>
-        <ControlledInput value={this.state.input}/>
-        <h4>Enter your message</h4>
-        <input value={this.state.input} onChange={this.handleChange.bind(this)}></input>
-        <button type='submit'>Submit!</button>
-        </form>
-       
-        <h1>{this.state.submit}</h1>
-       
-      </div>
-    );
-  }
-}
-ReactDOM.render(<MyForm />, document.getElementById("hiyou"))
+            <h1>{this.state.submit}</h1>
+          </div>
+        );
+      }
+    }
+    ReactDOM.render(<MyForm />, document.getElementById("hiyou"));
 
-/* Example componentDidMount and componentWillUnmount
+    /* Example componentDidMount and componentWillUnmount
 
 class MyComponent extends React.Component {
   constructor(props) {
@@ -318,7 +334,5 @@ class Controller extends React.Component {
 }
 
 */
-
-</script>
-
+  </script>
 </html>
