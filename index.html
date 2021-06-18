@@ -16,45 +16,76 @@
 <body>
     <header>
     <!--nav bar-->
-        <nav>
-            <a href="#home"><img class="logo" src="images/hezzi.png" alt="hezzipham"></a>
-            <ul class= "flex" id="content">
-                <li><a href="#about">About</a></li>
-                <li><a href="#portfolio">Works</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#contact">Contact</a></li>
+        <nav class= "nav">
+            <a href="#home"><img class="nav__logo" src="images/hezzi.png" alt="hezzipham"></a>
+            <button class="nav__toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <ul class="nav__list">
+                <li class="nav__item"><a class="nav__link" href="#service">My Services</a></li>
+                <li class="nav__item"><a class="nav__link" href="#about">About me</a></li>
+                <li class="nav__item"><a class="nav__link" href="#portfolio">Portfolio</a></li>
+                <li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
             </ul> 
-            <ul class= "flex" id="socialmedia">
-                <li><a href="https://www.facebook.com/hezzipham/" target="blank" class="fa fa-facebook"></a></li>
-                <li><a href="http://bit.ly/3qg3O13" target="blank" class="fa fa-youtube"></a></li>
-                <li><a href="https://www.instagram.com/hezzipham" target="blank" class="fa fa-instagram"></a></li>
+            <ul class="nav__socialmedia">
                 <li><a href="https://github.com/Hezzipham/" target="blank" class="fa fa-github"></a></li>
+                <li><a href="http://bit.ly/3qg3O13" target="blank" class="fa fa-youtube"></a></li>
+                <li><a href="https://www.instagram.com/hezzipham" target="blank" class="fa fa-instagram"></a></li> 
+                <li><a href="https://www.facebook.com/hezzipham/" target="blank" class="fa fa-facebook"></a></li>
             </ul>
         </nav>
-        <!--Photo slides-->
-        <section>
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-            <img src="" alt="">
-        </section>
+       
     </header>
-    <main>
-        
+    <main>   
         <!--Introduction-->
-        <section id="chiendrone">
-            <h2>Hi, I am Chien Drone-
-                The Founder of Domino Media
-            </h2>
-            <p>I have been a photography/video producer for more than 10 years. Understanding the important of social
-                media branding and online marketing, our company provides many sevices to our clients. Our mission is
-                giving your story a unique perspective and meaning.</p>
-            <img src="chienpic.png" alt="">
+        <section class="intro" id="home">
+            <h1 class="intro__title intro__title--describe">
+                Hello, I am <strong>Hezzi Pham</strong></h1>
+            <p class="intro__subtitle intro__substitle--describe">Front-end Developer</p>
+            <img src="image/hezziintro.jpg" alt="Hezzipic">
         </section>
-        <!--services-->
-        <section>
+        <!--My Service-->
+        <section class="myservice" id="service">
+            <h2 class="service__title service__title--describe">My Services</h2>
+            <div class="services">
+                <div class="service wordpress">
+                    <h3>WordPress</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus atque voluptate voluptatum! Suscipit tempora voluptate libero quaerat aliquid, impedit nihil ipsam hic accusantium molestiae est quas ut provident esse odio!</p>
+                </div>
+                <div class="service wordpress">
+                    <h3>Brand Image</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus atque voluptate voluptatum! Suscipit tempora voluptate libero quaerat aliquid, impedit nihil ipsam hic accusantium molestiae est quas ut provident esse odio!</p>
+                </div>
+                <div class="service wordpress">
+                    <h3>Web Develope</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus atque voluptate voluptatum! Suscipit tempora voluptate libero quaerat aliquid, impedit nihil ipsam hic accusantium molestiae est quas ut provident esse odio!</p>
+                </div>
+                <a href="#portfolio" class="btn">My Work</a>
+            </div>
+        </section>
+        <!--About Me-->
+        <secction class="aboutme" id="about">
+            <h2 class="aboutme__title">Who Am I</h2>
+            <h3>My Background</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quibusdam explicabo molestias fuga laborum id ullam magnam minus necessitatibus soluta, odio maiores corporis numquam dicta deserunt, sunt a iusto et?</p>
+            <h3>My Skills</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum adipisci quam explicabo reiciendis repellat qui corporis accusamus! Vero atque culpa distinctio minus unde! Architecto aperiam rerum facere quia explicabo natus!</p>
+            <h3>My Interests</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque laudantium dicta pariatur nostrum. Sapiente dolorum facilis omnis ipsa suscipit soluta, libero nisi minima quod. Vitae neque perspiciatis deserunt facilis magni?</p>
+        </secction>
+         <!--My Work-->
+         <section class="portfolio" id="portfolio">
+             <h1 class="portfolio__title">My Work</h1>
+             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam excepturi ab nostrum quos aliquid expedita corporis porro inventore. Ipsum sequi ex quas commodi ab amet dolorem modi expedita temporibus odio?</p>
+             <a href=""><img src="" alt=""></a>
+             <a href=""><img src="" alt=""></a>
+             <a href=""><img src="" alt=""></a>
+             <a href=""><img src="" alt=""></a>
+             <a href=""><img src="" alt=""></a>
+             <a href=""><img src="" alt=""></a>
 
-        </section>
+         </section>
+
     </main>
     <footer>
 

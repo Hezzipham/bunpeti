@@ -2,6 +2,8 @@ html{
     font-size: 100%;
     box-sizing: border-box;
     overflow-x: hidden;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
 }
 
 *, *::before, *::after {
@@ -15,25 +17,32 @@ body{
     background-color: #303235;
     color: #b8bcc0;
 }
-//flex box
-.flex{
-    display: flex;
-    justify-content: space-between;
-
-}
-nav{
+.nav{
     display: flex;
     justify-content: space-between;
     font-size: 1.5em;
     text-decoration: none;
     align-items: center;
+
 }
-#content{
+.nav__logo{
+    width: 4em;
+}
+.nav__toggle{
+display: none;
+}
+
+.nav__list{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     flex: 1;
     max-width: 50%;
+    align-items: center;
+    justify-content: space-evenly;
 }
-#socialmedia>li{
-    margin-right:0.5em;
+.nav__socialmedia>li{
+    margin-right:0.6em;
 }
 
 ul,li{
@@ -44,7 +53,4 @@ ul,li{
 a {
     text-decoration: none;
     color: inherit;
-}
-.logo{
-    width: 4em;
 }
