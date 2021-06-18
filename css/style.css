@@ -102,6 +102,7 @@ h1 {
 
 h2 {
   font-size: 3rem;
+  border-bottom: 1px solid #f439a2;
 }
 
 section {
@@ -111,5 +112,14 @@ section {
 .intro {
   text-align: center;
   background-color: #3f4346;
+}
+
+.resume {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */
