@@ -129,7 +129,6 @@ section {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  max-width: 80%;
-  margin: 1rem 2rem;
+  min-width: 50%;
 }
 /*# sourceMappingURL=style.css.map */
