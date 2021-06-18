@@ -33,6 +33,10 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #292a2d;
 }
 
 .nav__logo {
@@ -78,5 +82,9 @@ ul, li {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+section {
+  padding: 4rem;
 }
 /*# sourceMappingURL=style.css.map */

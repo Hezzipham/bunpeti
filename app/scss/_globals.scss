@@ -23,6 +23,10 @@ body{
     font-size: 1.5em;
     text-decoration: none;
     align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #292a2d;
 
 }
 .nav__logo{
@@ -53,4 +57,7 @@ ul,li{
 a {
     text-decoration: none;
     color: inherit;
+}
+section{
+    padding:4rem;
 }
