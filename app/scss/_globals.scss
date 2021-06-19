@@ -73,6 +73,8 @@ h1,h2,h3{
 }
 h1{
     font-size:3.5rem;
+    text-shadow:3px 3px 3px black;
+    color: #b8bcc09c;
 }
 h2{
     font-size: 3rem;
@@ -85,8 +87,16 @@ padding:1rem 2rem;
     background-color:rgb(200, 4, 226);
 }
 .intro{
+    font-size: 1.2em;
     text-align: center;
     background-color: #3f4346;
+    background-image: url(/images/galaxy.jpg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height:70vh;
+
 }
 .resume{
     display: flex;
@@ -123,6 +133,10 @@ padding:1rem 2rem;
     justify-self: center;
     border: 1px solid #f439a2;
     border-radius: 10px;
-    padding: 0.5em 1em;
+    padding: 0.5rem 1rem;
     display: inline-block; 
+    font-size: 1rem;
+}
+.btn:hover{
+    background-color:#f439a2;
 }
