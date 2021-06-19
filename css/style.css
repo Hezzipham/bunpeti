@@ -233,9 +233,9 @@ section {
   }
 }
 
-@media (min-width: 67em) and (max-width: 88.75em) {
+@media (min-width: 51em) and (max-width: 88.75em) {
   .service {
-    width: 35%;
+    width: 40%;
   }
 }
 
