@@ -89,6 +89,7 @@ a {
 }
 //general css
 h1,h2,h3{
+    padding-left: 2%;
     line-height: 1.1;
 }
 h1{
@@ -97,6 +98,7 @@ h1{
     color: #b8bcc09c;
 }
 h2{
+ 
     font-size: 3rem;
     border-bottom: 1px solid #19d7f8;
 }
@@ -129,7 +131,9 @@ padding:1rem 2rem;
 }
 .hezziintro{
     flex:1;
-    min-width: 50%;
+    min-width: 65%;
+    @media (min-width:50em){
+        padding: 0 2em;}
 };
 .hezziphoto{
     min-width:30%;
@@ -137,6 +141,9 @@ padding:1rem 2rem;
         display:none;
     }
 
+}
+.hezziphoto img{
+    border-radius: 15px;
 }
 //services
 .myservice{
@@ -150,16 +157,28 @@ min-height:100vh;
     text-align: center;
 }
 .service{
-    border: 25px solid  #292a2d;
+    border: 20px solid  transparent;
     border-radius: 10px;
     width: 20%;
     min-width: 300px;
-    padding: 1em;
-    background-color: #3f4346;
+    margin: 1em;
+    background-image: linear-gradient(#3f4346,#3f4346), radial-gradient(circle at top left, #fd00da,#19d7f8);
+    background-origin: border-box;
+    background-clip: content-box,border-box;
     box-shadow: 3px 0 2em rgba(255, 0, 0,0.5), -1em 0 1em rgba(200, 4, 226, 0.5);
-    @media (max-width:43em){
+    @media (max-width:50em){
         width:90%
     }
+}
+.service p{
+    padding: 0 1em;
+}
+.service h1 {
+    color: white;
+    margin: 0.5em;
+}
+.service h3{
+    color:#f439a2;
 }
 //button
 .btn{

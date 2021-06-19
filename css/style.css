@@ -113,6 +113,7 @@ a {
 }
 
 h1, h2, h3 {
+  padding-left: 2%;
   line-height: 1.1;
 }
 
@@ -170,7 +171,13 @@ section {
   -webkit-box-flex: 1;
       -ms-flex: 1;
           flex: 1;
-  min-width: 50%;
+  min-width: 65%;
+}
+
+@media (min-width: 50em) {
+  .hezziintro {
+    padding: 0 2em;
+  }
 }
 
 .hezziphoto {
@@ -181,6 +188,10 @@ section {
   .hezziphoto {
     display: none;
   }
+}
+
+.hezziphoto img {
+  border-radius: 15px;
 }
 
 .myservice {
@@ -204,20 +215,36 @@ section {
 }
 
 .service {
-  border: 25px solid  #292a2d;
+  border: 20px solid  transparent;
   border-radius: 10px;
   width: 20%;
   min-width: 300px;
-  padding: 1em;
-  background-color: #3f4346;
+  margin: 1em;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#3f4346), to(#3f4346)), radial-gradient(circle at top left, #fd00da, #19d7f8);
+  background-image: linear-gradient(#3f4346, #3f4346), radial-gradient(circle at top left, #fd00da, #19d7f8);
+  background-origin: border-box;
+  background-clip: content-box,border-box;
   -webkit-box-shadow: 3px 0 2em rgba(255, 0, 0, 0.5), -1em 0 1em rgba(200, 4, 226, 0.5);
           box-shadow: 3px 0 2em rgba(255, 0, 0, 0.5), -1em 0 1em rgba(200, 4, 226, 0.5);
 }
 
-@media (max-width: 43em) {
+@media (max-width: 50em) {
   .service {
     width: 90%;
   }
+}
+
+.service p {
+  padding: 0 1em;
+}
+
+.service h1 {
+  color: white;
+  margin: 0.5em;
+}
+
+.service h3 {
+  color: #f439a2;
 }
 
 .btn {
