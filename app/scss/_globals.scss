@@ -133,6 +133,9 @@ padding:1rem 2rem;
 };
 .hezziphoto{
     min-width:30%;
+    @media (max-width: 40em){
+        display:none;
+    }
 
 }
 //services

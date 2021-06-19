@@ -177,6 +177,12 @@ section {
   min-width: 30%;
 }
 
+@media (max-width: 40em) {
+  .hezziphoto {
+    display: none;
+  }
+}
+
 .myservice {
   min-height: 100vh;
 }
