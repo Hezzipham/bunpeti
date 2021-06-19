@@ -24,8 +24,8 @@
             <ul class="nav__list">
                 <li class="nav__item"><a class="fa fa-laptop" href="#home"></a></li>
                 <li class="nav__item"><a class="nav__link" href="#service">My Services</a></li>
-                <li class="nav__item"><a class="nav__link" href="#about">About Me</a></li>
                 <li class="nav__item"><a class="nav__link" href="#portfolio">Portfolio</a></li>
+                <li class="nav__item"><a class="nav__link" href="#about">About Me</a></li>
                 <li class="nav__item"><a class="nav__link" href="#contact">Contact</a></li>
             </ul>
             <ul class="nav__socialmedia">
@@ -38,11 +38,12 @@
         </nav>
         <!--Introduction-->
         <section class="intro" id="home">
-            <h1 class="intro__title intro__title--describe">
+            <div><h1 class="intro__title intro__title--describe">
                 <br>Hello, I am<br>
                 Hezzi Pham</h1>
                 <p class="intro__subtitle intro__substitle--describe">Front-end Developer</p>
-        </section>
+            </div>
+            </section>
     </header>
     <main>
 
@@ -75,7 +76,20 @@
                         est quas ut provident esse odio!</p>
                 </div>
             </div>   
-            <a href="#portfolio" class="btn">My Work</a>
+            <a href="#portfolio" class="btn"><span>My Work</span></a>
+        </section>
+        
+        <!--My Work-->
+        <section class="portfolio" id="portfolio">
+            <h2 class="portfolio__title">My Work</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam excepturi ab nostrum quos aliquid expedita
+                corporis porro inventore. Ipsum sequi ex quas commodi ab amet dolorem modi expedita temporibus odio?</p>
+            <a href=""><img src="" alt=""></a>
+            <a href=""><img src="" alt=""></a>
+            <a href=""><img src="" alt=""></a>
+            <a href=""><img src="" alt=""></a>
+            <a href=""><img src="" alt=""></a>
+            <a href=""><img src="" alt=""></a>
         </section>
         <!--About Me-->
         <section class="aboutme" id="about">
@@ -103,18 +117,6 @@
                 <div class="hezziphoto"><img src="images/hezziphoto.jpg" alt=""></div>
             </div>
         </section>
-        <!--My Work-->
-        <section class="portfolio" id="portfolio">
-            <h2 class="portfolio__title">My Work</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam excepturi ab nostrum quos aliquid expedita
-                corporis porro inventore. Ipsum sequi ex quas commodi ab amet dolorem modi expedita temporibus odio?</p>
-            <a href=""><img src="" alt=""></a>
-            <a href=""><img src="" alt=""></a>
-            <a href=""><img src="" alt=""></a>
-            <a href=""><img src="" alt=""></a>
-            <a href=""><img src="" alt=""></a>
-            <a href=""><img src="" alt=""></a>
-        </section>
         <!--Contact Me-->
         <section id="contact" class="contact">
             <h2 class="contact__title">Contact Me</h2>
@@ -131,7 +133,7 @@
                     <label for="message">Message:</label>
                     <textarea class="form__input" rows="5" id="message" name="message"></textarea>
                 </div>
-                <button type="submit" class="btn">Submit</button>
+                <a class="btn"><span>Submit</span></a>
             </form>
         </section>
     </main>
