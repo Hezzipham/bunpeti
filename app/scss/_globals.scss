@@ -166,7 +166,10 @@ min-height:100vh;
     background-clip: content-box,border-box;
     box-shadow: 3px 0 2em rgba(255, 0, 0,0.5), -1em 0 1em rgba(200, 4, 226, 0.5);
     @media (max-width:50em){
-        width:90%
+        width:90%;
+    }
+    @media (min-width: 67em) and (max-width: 88.75em){
+        width: 35%;
     }
 }
 .service p{

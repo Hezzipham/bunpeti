@@ -233,6 +233,12 @@ section {
   }
 }
 
+@media (min-width: 67em) and (max-width: 88.75em) {
+  .service {
+    width: 35%;
+  }
+}
+
 .service p {
   padding: 0 1em;
 }
