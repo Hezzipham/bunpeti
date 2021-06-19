@@ -131,9 +131,9 @@ section {
   padding: 1rem 2rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 50em) {
   section {
-    padding: 0 0.5rem;
+    padding: 0 2em;
   }
 }
 
@@ -145,7 +145,7 @@ section {
   background-color: #c804e2;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 50em) {
   .hide-for-mobile {
     display: none;
   }
@@ -202,10 +202,16 @@ section {
   border-radius: 10px;
   width: 20%;
   min-width: 300px;
-  padding: 0 1em;
+  padding: 1em;
   background-color: #3f4346;
   -webkit-box-shadow: 3px 0 2em rgba(255, 0, 0, 0.5), -1em 0 1em rgba(200, 4, 226, 0.5);
           box-shadow: 3px 0 2em rgba(255, 0, 0, 0.5), -1em 0 1em rgba(200, 4, 226, 0.5);
+}
+
+@media (max-width: 43em) {
+  .service {
+    width: 90%;
+  }
 }
 
 .btn {

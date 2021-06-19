@@ -102,14 +102,14 @@ h2{
 }
 section{
 padding:1rem 2rem;
-    @media (max-width:600px){
-    padding: 0 0.5rem;}
+    @media (max-width:50em){
+    padding: 0 2em;}
 }
 ::selection{
     background-color:rgb(200, 4, 226);
 }
 .hide-for-mobile{
-    @media (max-width: 600px){
+    @media (max-width: 50em){
         display: none;
     }
 }
@@ -151,10 +151,12 @@ min-height:100vh;
     border-radius: 10px;
     width: 20%;
     min-width: 300px;
-    padding: 0 1em;
+    padding: 1em;
     background-color: #3f4346;
     box-shadow: 3px 0 2em rgba(255, 0, 0,0.5), -1em 0 1em rgba(200, 4, 226, 0.5);
-
+    @media (max-width:43em){
+        width:90%
+    }
 }
 //button
 .btn{
