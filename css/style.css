@@ -189,14 +189,19 @@ section {
   min-width: 30%;
 }
 
-@media (max-width: 40em) {
-  .hezziphoto {
-    display: none;
-  }
-}
-
 .hezziphoto img {
   border-radius: 15px;
+  -webkit-box-shadow: 3px 0 2em rgba(200, 4, 226, 0.5), -1em 0 1em rgba(255, 0, 0, 0.5);
+          box-shadow: 3px 0 2em rgba(200, 4, 226, 0.5), -1em 0 1em rgba(255, 0, 0, 0.5);
+}
+
+@media (max-width: 40em) {
+  .hezziphoto img {
+    width: 90%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .myservice {
@@ -265,7 +270,10 @@ section {
   background-image: linear-gradient(#42455a, #42455a), radial-gradient(circle at top left, #fd00da, #19d7f8);
   background-origin: border-box;
   background-clip: content-box,border-box;
-  display: inline-block;
+  display: block;
+  width: 5em;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 1rem;
   margin-top: 2em;
   cursor: pointer;
@@ -278,6 +286,7 @@ section {
 .btn span {
   padding: 0.5em 1em;
   display: block;
+  text-align: center;
 }
 
 footer {
