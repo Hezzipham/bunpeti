@@ -17,6 +17,7 @@ body {
   padding: 0;
   line-height: 1.3;
   font-family: 'Crimson Text', serif;
+  font-size: 1.2rem;
   background-color: #303235;
   color: #b8bcc0;
 }
@@ -109,6 +110,14 @@ section {
   padding: 1rem 2rem;
 }
 
+::-moz-selection {
+  background-color: #c804e2;
+}
+
+::selection {
+  background-color: #c804e2;
+}
+
 .intro {
   text-align: center;
   background-color: #3f4346;
@@ -130,5 +139,42 @@ section {
       -ms-flex: 1;
           flex: 1;
   min-width: 50%;
+}
+
+.services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  text-align: center;
+}
+
+.service {
+  border: 25px solid  #292a2d;
+  border-radius: 10px;
+  width: 20%;
+  min-width: 250px;
+  margin-bottom: 5em;
+  padding: 0 1em;
+  background-color: #3f4346;
+  -webkit-box-shadow: 3px 0 2em red, -1em 0 1em #c804e2;
+          box-shadow: 3px 0 2em red, -1em 0 1em #c804e2;
+}
+
+.btn {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  border: 1px solid #f439a2;
+  border-radius: 10px;
+  padding: 0.5em 1em;
+  display: inline-block;
 }
 /*# sourceMappingURL=style.css.map */
