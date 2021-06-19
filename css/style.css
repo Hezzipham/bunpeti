@@ -273,4 +273,9 @@ section {
   padding: 0.5em 1em;
   display: block;
 }
+
+footer {
+  height: 10vh;
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */
