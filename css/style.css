@@ -132,9 +132,8 @@ a {
     position: fixed;
     max-width: none;
     width: 100%;
-    top: 1em;
     right: 0;
-    left: -100%;
+    top: 1em;
     background: #292a2d;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
