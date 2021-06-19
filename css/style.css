@@ -151,6 +151,12 @@ section {
   }
 }
 
+@media (min-width: 50.01em) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
 .aboutme {
   min-height: 100vh;
 }

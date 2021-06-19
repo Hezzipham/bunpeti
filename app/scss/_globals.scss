@@ -115,6 +115,9 @@ padding:1rem 2rem;
     }
 }
 .hide-for-desktop{
+    @media (min-width: 50.01em){
+        display: none;
+    }
 
     }
 
