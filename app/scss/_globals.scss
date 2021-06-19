@@ -76,8 +76,7 @@ h1{
 }
 h2{
     font-size: 3rem;
-    border-bottom: 1px solid #f439a2;
-}
+    border-bottom: 1px solid #b8bcc0;
 section{
 padding:1rem 2rem;
 }
@@ -113,7 +112,7 @@ padding:1rem 2rem;
     margin-bottom: 5em;
     padding: 0 1em;
     background-color: #3f4346;
-    box-shadow: 3px 0 2em rgb(255, 0, 0), -1em 0 1em rgb(200, 4, 226);
+    box-shadow: 3px 0 2em rgba(255, 0, 0,0.5), -1em 0 1em rgba(200, 4, 226, 0.5);
 
 
 

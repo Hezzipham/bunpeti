@@ -103,7 +103,7 @@ h1 {
 
 h2 {
   font-size: 3rem;
-  border-bottom: 1px solid #f439a2;
+  border-bottom: 1px solid #292a2d;
 }
 
 section {
@@ -165,8 +165,8 @@ section {
   margin-bottom: 5em;
   padding: 0 1em;
   background-color: #3f4346;
-  -webkit-box-shadow: 3px 0 2em red, -1em 0 1em #c804e2;
-          box-shadow: 3px 0 2em red, -1em 0 1em #c804e2;
+  -webkit-box-shadow: 3px 0 2em rgba(255, 0, 0, 0.5), -1em 0 1em rgba(200, 4, 226, 0.5);
+          box-shadow: 3px 0 2em rgba(255, 0, 0, 0.5), -1em 0 1em rgba(200, 4, 226, 0.5);
 }
 
 .btn {
