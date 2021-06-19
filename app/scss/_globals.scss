@@ -14,7 +14,7 @@ body{
     padding: 0;
     line-height: 1.3;
     font-family: 'Crimson Text', serif;
-    font-size: 1.2rem;
+    font-size: 1.1em;
     background-color: #303235;
     color: #b8bcc0;
     overflow-x: hidden;
@@ -49,7 +49,7 @@ header{
     top: 0;
     width: 100%;
     padding: 0 1em;
-    background-color: #292a2d9c;
+    background-color: #292a2d;
 
 }
 
@@ -86,6 +86,43 @@ a {
 .nav__item:hover {
     color: #19d7f8;
 }
+.checkbtn{
+    font-size: 1.3em;
+    float: right;
+    line-height:1.2em;
+    margin-right: 2%;
+    cursor: pointer;
+    display: none;
+    
+}
+.checkbtn:hover{
+    color:#19d7f8;
+}
+#check{
+    //display:none;
+}
+@media(max-width:50em){
+    .checkbtn{display: block;}
+    .nav__list {
+        position: fixed;
+        max-width: none;
+        width: 100%;
+        top: 1em;
+        right:0;
+        left:-100%;
+        background:#292a2d;
+        flex-direction: column;
+        justify-content: flex-start;
+        font-size: 2em;
+        padding:4%;
+        align-items: flex-end;
+        transition: all .5s;
+    }
+    #check:checked ~ .nav__list{
+        left: 0;
+    }
+}
+
 //general css
 h1,h2,h3{
     padding-left: 2%;
@@ -123,9 +160,7 @@ padding:1rem 2rem;
 
 
 //Aboutme
-.aboutme{
-    min-height:100vh;
-}
+
 .resume{
     display: flex;
     flex-wrap: wrap;
@@ -134,8 +169,7 @@ padding:1rem 2rem;
 .hezziintro{
     flex:1;
     min-width: 65%;
-    @media (min-width:50em){
-        padding: 0 2em;}
+    padding: 0 2em;
 };
 .hezziphoto{
     min-width:30%;
@@ -152,9 +186,6 @@ padding:1rem 2rem;
     }
 }
 //services
-.myservice{
-min-height:100vh;
-}
 .services{
     display: flex;
     flex-direction: row;

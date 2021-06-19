@@ -20,7 +20,7 @@
         <nav class="nav">
             <a class="fa fa-laptop logo" href="#"></a>
     
-            <ul class="nav__list hide-for-mobile">
+            <ul class="nav__list" id="menu" >
                 <li class="nav__item"><a class="nav__link" href="#service">My Services</a></li>
                 <li class="nav__item"><a class="nav__link" href="#portfolio">Portfolio</a></li>
                 <li class="nav__item"><a class="nav__link" href="#about">About Me</a></li>
@@ -33,7 +33,9 @@
                 <li><a href="https://www.instagram.com/hezzipham" target="blank" class="fa fa-instagram"></a></li>
                 <li><a href="https://www.facebook.com/hezzipham/" target="blank" class="fa fa-facebook"></a></li>
             </ul>
-            <i class="fas fa-bars menu hide-for-desktop"></i>
+            <input type="checkbox" id="check" name="check">
+            <label for="check" class="checkbtn">
+            <i class="fas fa-bars menuicon "></i></label>
         </nav>
         <!--Introduction-->
         <section class="intro" id="home">
@@ -84,9 +86,7 @@
 
         <!--My Work-->
         <section class="portfolio" id="portfolio">
-            <h2 class="portfolio__title">My Work</h2>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam excepturi ab nostrum quos aliquid expedita
-                corporis porro inventore. Ipsum sequi ex quas commodi ab amet dolorem modi expedita temporibus odio?</p>
+            <h2 class="portfolio__title">My Work</h2> 
             <a href=""><img src="" alt=""></a>
             <a href=""><img src="" alt=""></a>
             <a href=""><img src="" alt=""></a>
