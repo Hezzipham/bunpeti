@@ -125,10 +125,6 @@ a {
   color: #19d7f8;
 }
 
-#check {
-  display: none;
-}
-
 @media (max-width: 50em) {
   .checkbtn {
     display: block;
@@ -156,7 +152,7 @@ a {
     transition: all .5s;
   }
   #check:checked ~ .nav__list {
-    left: 0;
+    color: #f439a2;
   }
 }
 

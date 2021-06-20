@@ -103,7 +103,7 @@ a {
     color:#19d7f8;
 }
 #check{
-    display:none;
+    //display:none;
 }
 @media(max-width:50em){
     .checkbtn{display: block;}
@@ -124,7 +124,7 @@ a {
        
     }
     #check:checked ~ .nav__list{
-        left: 0;
+        color:#f439a2;
     }
 }
 
@@ -171,7 +171,7 @@ padding:1rem 2rem;
     flex:1;
     min-width: 65%;
     padding: 0 2%;
-};
+}
 .hezziphoto{
     min-width:30%;
 
