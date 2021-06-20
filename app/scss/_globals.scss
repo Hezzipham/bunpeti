@@ -43,7 +43,8 @@ header{
 //navbar
 .nav{
     display: flex;
-    justify-content: space-between;
+    justify-content:space-between;
+    padding: 0 2em;
     text-decoration: none;
     align-items: center;
     position: fixed;
@@ -67,6 +68,9 @@ header{
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
+}
+.nav__socialmedia{
+    align-self: flex-end;
 }
 
 .logo{
