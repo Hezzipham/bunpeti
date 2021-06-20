@@ -157,7 +157,7 @@ a {
     transition: all .5s;
   }
   #menu:checked ~ .nav__list {
-    left: 0;
+    left: 0%;
   }
   #menu:checked ~ .checkbtn {
     color: #19d7f8;
@@ -168,7 +168,7 @@ h1 {
   font-size: 3.5rem;
   text-shadow: 3px 3px 3px black;
   color: #b8bcc09c;
-  ine-height: 1.1;
+  line-height: 1.1;
 }
 
 h2 {
