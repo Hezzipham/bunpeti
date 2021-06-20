@@ -151,8 +151,8 @@ a {
     -webkit-transition: all .5s;
     transition: all .5s;
   }
-  #check:checked ~ .nav__list {
-    left: 0;
+  #menu:checked ~ .nav__list {
+    display: none;
   }
 }
 

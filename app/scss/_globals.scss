@@ -102,7 +102,7 @@ a {
 .checkbtn:hover{
     color:#19d7f8;
 }
-#check{
+#menu{
    // display:none;
 }
 @media(max-width:50em){
@@ -114,7 +114,6 @@ a {
         width: 100%;
         right:0;
         top: 1em;
-        //left: -100vw;
         background:#292a2d;
         flex-direction: column;
         justify-content: flex-start;
@@ -123,8 +122,8 @@ a {
         transition: all .5s;
        
     }
-    #check:checked ~ .nav__list {
-        left:0;
+    #menu:checked ~ .nav__list {
+        display: none;
     }
 }
 
