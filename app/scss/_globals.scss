@@ -98,21 +98,23 @@ a {
     cursor: pointer;
     display: none;
     
+    
 }
 .checkbtn:hover{
-    color:#19d7f8;
+    cursor: pointer;
 }
 #menu{
    display:none;
 }
 @media(max-width:50em){
-    .checkbtn{display: block;}
+    .checkbtn{display: block}
     .nav__list {
         align-items: flex-end;
         position: fixed;
         max-width: none;
         width: 100%;
         right:0;
+        left: -120%;
         top: 1em;
         background:#292a2d;
         flex-direction: column;
@@ -123,7 +125,10 @@ a {
        
     }
     #menu:checked ~ .nav__list {
-        display: none;
+        left:0;
+    }
+    #menu:checked ~ .checkbtn{
+        color: #19d7f8;
     }
 }
 

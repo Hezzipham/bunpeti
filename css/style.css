@@ -122,7 +122,7 @@ a {
 }
 
 .checkbtn:hover {
-  color: #19d7f8;
+  cursor: pointer;
 }
 
 #menu {
@@ -141,6 +141,7 @@ a {
     max-width: none;
     width: 100%;
     right: 0;
+    left: -120%;
     top: 1em;
     background: #292a2d;
     -webkit-box-orient: vertical;
@@ -156,7 +157,10 @@ a {
     transition: all .5s;
   }
   #menu:checked ~ .nav__list {
-    display: none;
+    left: 0;
+  }
+  #menu:checked ~ .checkbtn {
+    color: #19d7f8;
   }
 }
 
