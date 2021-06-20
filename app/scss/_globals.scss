@@ -126,6 +126,7 @@ a {
     }
     #menu:checked ~ .nav__list {
         left:0%;
+        background-color: green;
     }
     #menu:checked ~ .checkbtn{
         color: #19d7f8;
