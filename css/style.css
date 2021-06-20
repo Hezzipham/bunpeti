@@ -322,8 +322,8 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap-reverse;
-      flex-wrap: wrap-reverse;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -336,6 +336,7 @@ form {
   margin: auto;
   width: 600px;
   padding: 2em;
+  margin-bottom: 2em;
   border-radius: 15px;
   -webkit-box-shadow: 3px 0 2em rgba(200, 4, 226, 0.5), -1em 0 1em rgba(255, 0, 0, 0.5);
           box-shadow: 3px 0 2em rgba(200, 4, 226, 0.5), -1em 0 1em rgba(255, 0, 0, 0.5);
@@ -350,6 +351,7 @@ form {
 .contact iframe {
   border-radius: 10px;
   margin: auto;
+  margin-bottom: 2em;
 }
 
 .btn {
