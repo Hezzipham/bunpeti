@@ -318,14 +318,24 @@ a {
   color: #f439a2;
 }
 
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap-reverse;
+      flex-wrap: wrap-reverse;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 form {
   background-image: url(/images/galaxy.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  line-height: 3;
-  max-width: 40em;
   margin: auto;
-  padding: 3em;
+  width: 600px;
+  padding: 2em;
   border-radius: 15px;
   -webkit-box-shadow: 3px 0 2em rgba(200, 4, 226, 0.5), -1em 0 1em rgba(255, 0, 0, 0.5);
           box-shadow: 3px 0 2em rgba(200, 4, 226, 0.5), -1em 0 1em rgba(255, 0, 0, 0.5);
@@ -335,6 +345,11 @@ form {
   width: 100%;
   padding: 1em;
   opacity: 0.7;
+}
+
+.contact iframe {
+  border-radius: 10px;
+  margin: auto;
 }
 
 .btn {
@@ -351,16 +366,11 @@ form {
   font-size: 1rem;
   margin-top: 2em;
   cursor: pointer;
+  text-align: center;
 }
 
 .btn:hover {
   color: #f439a2;
-}
-
-.btn span {
-  padding: 0.5em 1em;
-  display: block;
-  text-align: center;
 }
 
 footer {
