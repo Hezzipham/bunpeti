@@ -301,12 +301,14 @@ form {
   max-width: 40em;
   margin: auto;
   padding: 3em;
+  border-radius: 10px;
 }
 
 .form__input {
   display: block;
   width: 100%;
   padding: 1em;
+  opacity: 0.7;
 }
 
 .btn {
