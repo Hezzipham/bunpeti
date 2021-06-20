@@ -58,7 +58,7 @@ header{
 
 
 .nav__list{
-    @media(min-width:50.1em){
+    
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -67,7 +67,6 @@ header{
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
-    }
 }
 .logo{
     color:#19d7f8;
@@ -104,12 +103,11 @@ a {
     color:#19d7f8;
 }
 #check{
-    display:none;
+   // display:none;
 }
 @media(max-width:50em){
     .checkbtn{display: block;}
     .nav__list {
-        display: flex;
         align-items: flex-end;
         position: fixed;
         max-width: none;
