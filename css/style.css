@@ -59,7 +59,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  padding: 0 1em;
+  padding: 1 1em;
   background-color: #292a2d;
   z-index: 500;
 }
@@ -125,6 +125,10 @@ a {
   color: #19d7f8;
 }
 
+#menu {
+  display: none;
+}
+
 @media (max-width: 50em) {
   .checkbtn {
     display: block;
@@ -146,7 +150,7 @@ a {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
-    font-size: 1.5em;
+    font-size: 2em;
     padding: 4%;
     -webkit-transition: all .5s;
     transition: all .5s;
