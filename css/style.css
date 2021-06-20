@@ -352,6 +352,7 @@ form {
   border-radius: 10px;
   margin: auto;
   margin-bottom: 2em;
+  opacity: 0.8;
 }
 
 .btn {
