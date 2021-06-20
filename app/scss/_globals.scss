@@ -27,17 +27,16 @@ header{
 .intro{
     background-color: #3f4346;
     background-position: bottom;
+    background-image: url(/images/galaxy.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height:100%;
-    margin-bottom: 0;
+    text-align: center;
 }
 .intro div{
     font-size: 1.2em;
     width: 80%;
-    height: 60%;
-    position: absolute;
-    bottom: 10%;
+    height: 100%;
 }
 //navbar
 .nav{
@@ -125,17 +124,13 @@ a {
 }
 
 //general css
-h1,h2,h3{
-    padding-left: 2%;
-    line-height: 1.1;
-}
 h1{
     font-size:3.5rem;
     text-shadow:3px 3px 3px black;
     color: #b8bcc09c;
+    ine-height: 1.1;
 }
 h2{
- 
     font-size: 3rem;
     border-bottom: 1px solid #19d7f8;
 }
@@ -170,7 +165,7 @@ padding:1rem 2rem;
 .hezziintro{
     flex:1;
     min-width: 65%;
-    padding: 0 2em;
+    padding: 0 2%;
 };
 .hezziphoto{
     min-width:30%;
