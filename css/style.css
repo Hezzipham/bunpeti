@@ -87,10 +87,6 @@ header {
   cursor: pointer;
 }
 
-.nav__item {
-  float: left;
-}
-
 .logo {
   color: #19d7f8;
   font-size: 2em;
@@ -160,9 +156,7 @@ a {
     padding: 4%;
     -webkit-transition: all .5s;
     transition: all .5s;
-  }
-  .nav__item {
-    float: left;
+    line-height: 2em;
   }
   #menu:checked ~ .nav__list {
     left: 0%;

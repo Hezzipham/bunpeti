@@ -68,9 +68,7 @@ header{
     justify-content: space-between;
     cursor: pointer;
 }
-.nav__item{
-    float: left;
-}
+
 .logo{
     color:#19d7f8;
     font-size: 2em;
@@ -126,11 +124,10 @@ a {
         font-size: 2em;
         padding:4%;
         transition: all .5s;
+        line-height: 2em;
        
     }
-    .nav__item{
-        float: left;
-    }
+  
     #menu:checked ~ .nav__list {
         left:0%;
     }
