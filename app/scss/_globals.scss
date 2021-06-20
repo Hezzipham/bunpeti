@@ -91,12 +91,10 @@ padding:1rem 2rem;
 
 
 .nav__list{
-    
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     flex: 1;
-    max-width: 50%;
+    max-width: 65%;
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
