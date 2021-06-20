@@ -58,6 +58,7 @@ header{
 
 
 .nav__list{
+    @media(min-width:50.1em){
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -66,7 +67,7 @@ header{
     align-items: center;
     justify-content: space-between;
     cursor: pointer;
-  
+    }
 }
 .logo{
     color:#19d7f8;
@@ -103,28 +104,29 @@ a {
     color:#19d7f8;
 }
 #check{
-    //display:none;
+    display:none;
 }
 @media(max-width:50em){
     .checkbtn{display: block;}
     .nav__list {
+        display: flex;
+        align-items: flex-end;
         position: fixed;
         max-width: none;
         width: 100%;
         right:0;
         top: 1em;
-        //left:-100%;
+        //left: -100vw;
         background:#292a2d;
         flex-direction: column;
         justify-content: flex-start;
         font-size: 2em;
         padding:4%;
-        align-items: flex-end;
         transition: all .5s;
        
     }
-    #check:checked ~ .nav__list{
-        color:#f439a2;
+    #check:checked ~ .nav__list {
+        left:0;
     }
 }
 
