@@ -32,6 +32,8 @@ h1{
 h2{
     font-size: 3rem;
     border-bottom: 1px solid #19d7f8;
+    width: 90%;
+    margin-left: 5%;
     
 }
 section{
@@ -172,8 +174,6 @@ a {
     }
 }
 
-//general css
-
 //Aboutme
 
 .resume{
@@ -204,9 +204,12 @@ a {
 .services{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: space-evenly;
     text-align: center;
+    @media (max-width:88.76em){
+        flex-wrap: wrap;
+    }
+
 }
 .service{
     border: 20px solid  transparent;
