@@ -68,6 +68,9 @@ header{
     justify-content: space-between;
     cursor: pointer;
 }
+.nav__item{
+    float: left;
+}
 .logo{
     color:#19d7f8;
     font-size: 2em;
@@ -123,6 +126,9 @@ a {
         padding:4%;
         transition: all .5s;
        
+    }
+    .nav__item{
+        float: left;
     }
     #menu:checked ~ .nav__list {
         left:0%;
