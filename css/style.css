@@ -59,6 +59,7 @@ header {
   width: 100%;
   padding: 0 1em;
   background-color: #292a2d;
+  z-index: 500;
 }
 
 .nav__list {
