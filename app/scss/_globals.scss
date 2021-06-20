@@ -99,7 +99,7 @@ a {
     color:#19d7f8;
 }
 #check{
-    //display:none;
+    display:none;
 }
 @media(max-width:50em){
     .checkbtn{display: block;}
@@ -216,7 +216,21 @@ padding:1rem 2rem;
 .service h3{
     color:#f439a2;
 }
-
+//form 
+form {
+    background-image: url(/images/galaxy.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 3;
+    max-width: 40em;
+    margin: auto;
+    padding: 3em;
+}
+.form__input{
+    display: block;
+    width: 100%;
+    padding:1em;
+}
 //button
 .btn{
     border: 2px solid transparent;
@@ -231,6 +245,7 @@ padding:1rem 2rem;
     font-size: 1rem;
     margin-top: 2em;
     cursor: pointer;
+
 }
 .btn:hover{
     color:#f439a2;
