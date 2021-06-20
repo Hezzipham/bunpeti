@@ -28,6 +28,48 @@ header {
   height: 100vh;
 }
 
+h1 {
+  font-size: 3.5rem;
+  text-shadow: 3px 3px 3px black;
+  color: #b8bcc09c;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 3rem;
+  border-bottom: 1px solid #19d7f8;
+}
+
+section {
+  padding: 1rem 2rem;
+}
+
+@media (max-width: 50em) {
+  section {
+    padding: 0 2em;
+  }
+}
+
+::-moz-selection {
+  background-color: #c804e2;
+}
+
+::selection {
+  background-color: #c804e2;
+}
+
+@media (max-width: 50em) {
+  .hide-for-mobile {
+    display: none;
+  }
+}
+
+@media (min-width: 50.01em) {
+  .hide-for-desktop {
+    display: none;
+  }
+}
+
 .intro {
   background-color: #3f4346;
   background-position: bottom;
@@ -169,48 +211,6 @@ a {
   }
   #menu:checked ~ .checkbtn {
     color: #19d7f8;
-  }
-}
-
-h1 {
-  font-size: 3.5rem;
-  text-shadow: 3px 3px 3px black;
-  color: #b8bcc09c;
-  line-height: 1.1;
-}
-
-h2 {
-  font-size: 3rem;
-  border-bottom: 1px solid #19d7f8;
-}
-
-section {
-  padding: 1rem 2rem;
-}
-
-@media (max-width: 50em) {
-  section {
-    padding: 0 2em;
-  }
-}
-
-::-moz-selection {
-  background-color: #c804e2;
-}
-
-::selection {
-  background-color: #c804e2;
-}
-
-@media (max-width: 50em) {
-  .hide-for-mobile {
-    display: none;
-  }
-}
-
-@media (min-width: 50.01em) {
-  .hide-for-desktop {
-    display: none;
   }
 }
 
