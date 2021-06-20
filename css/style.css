@@ -83,10 +83,9 @@ section {
 
 .intro div {
   font-size: 1.2em;
-  width: 80%;
-  height: 100%;
+  width: 90%;
   position: absolute;
-  top: 7em;
+  top: 30%;
 }
 
 .nav {
