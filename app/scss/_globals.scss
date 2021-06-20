@@ -181,10 +181,14 @@ a {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-.hezziintro{
+.abouthezzi{
     flex:1;
     min-width: 65%;
     padding: 0 2%;
+    @media(min-width: 50.01em){
+        max-width: 40%;
+        margin-left: 3%;
+    }
 }
 .hezziphoto{
     min-width:30%;
@@ -193,7 +197,7 @@ a {
 .hezziphoto img{
     border-radius: 15px;
     box-shadow: 3px 0 2em rgba(200, 4, 226, 0.5), -1em 0 1em rgba(255, 0, 0,0.5) ;
-    @media (max-width: 40em){
+    @media (max-width: 50em){
         width: 90%;
         display: block;
         margin-left: auto;
