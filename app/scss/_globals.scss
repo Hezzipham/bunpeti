@@ -343,15 +343,14 @@ a {
 .codepen{
     height: 100%;
     cursor: pointer;
-    border: 2em solid transparent;
-    border-radius: 15px;
+    border: 2vw solid transparent;
+    border-radius: 15%;
     -webkit-transform: scale(1);
 	transform: scale(1);
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out;
 }
 .codepen:hover{
-    border: 1em solid transparent;
     -webkit-transform: scale(1.3);
 	transform: scale(1.3); 
 }
