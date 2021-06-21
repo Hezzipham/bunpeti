@@ -62,22 +62,24 @@ header {
   -webkit-animation: animate 6s linear infinite;
           animation: animate 6s linear infinite;
   text-shadow: 3px 3px 3px  #19d7f8;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes animate {
-  0%, 30%, 70%, 80% {
+  0% {
     width: 0;
   }
-  80%, 90% {
+  70% {
     width: 100%;
   }
 }
 
 @keyframes animate {
-  0%, 30%, 70%, 80% {
+  0% {
     width: 0;
   }
-  80%, 90% {
+  70% {
     width: 100%;
   }
 }
