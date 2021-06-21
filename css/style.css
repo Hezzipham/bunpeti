@@ -383,7 +383,6 @@ a {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   text-align: center;
-  border: 1px solid red;
 }
 
 .project {
