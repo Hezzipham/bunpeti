@@ -60,7 +60,7 @@ header {
   font-family: 'Righteous', cursive;
   font-size: 3em;
   font-weight: 400;
-  color: #3f4346;
+  color: transparent;
   -webkit-text-stroke: 2px #5f6263;
   text-transform: uppercase;
   position: relative;
