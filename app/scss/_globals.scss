@@ -59,16 +59,7 @@ header{
     animation-fill-mode: forwards;
 
 }
-@keyframes animate{
-   0%
-    {
-        width:0;
-    }
-   70%,
-    {
-        width:100%;
-    }
-}
+
 h2{
     font-size: 3rem;
     border-bottom: 1px solid #19d7f8;
