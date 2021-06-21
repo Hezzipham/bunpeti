@@ -34,8 +34,6 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
-  -ms-flex-item-align: end;
-      align-self: flex-end;
   width: 100%;
 }
 
@@ -46,25 +44,41 @@ header {
   top: 40%;
 }
 
+@media (min-width: 50em) {
+  .intro div {
+    margin-left: 5em;
+  }
+}
+
 .textanimate {
-  max-width: 18em;
+  max-width: 30em;
 }
 
 .textanimate h3 {
-  font-size: 2em;
+  font-size: 4rem;
   text-shadow: 3px 3px 3px black;
   color: #19d7f8;
-  line-height: 0;
+  text-align: justify;
 }
 
 .intro__title {
   font-family: 'Righteous', cursive;
-  font-size: 3em;
+  font-size: 6em;
   font-weight: 400;
   color: transparent;
   -webkit-text-stroke: 2px white;
   text-transform: uppercase;
   position: relative;
+  line-height: 1;
+}
+
+@media (max-width: 50em) {
+  .intro__title {
+    font-size: 14vw;
+  }
+  .textanimate h3 {
+    font-size: 7vw;
+  }
 }
 
 .intro__title::before {
@@ -370,6 +384,7 @@ form {
   background-image: url(/images/contact.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: top right;
   margin: auto;
   width: 600px;
   padding: 2em;
