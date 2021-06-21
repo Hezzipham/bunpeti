@@ -286,17 +286,12 @@ a {
     font-size: 3em;
     
 }
-.service{
 
-}
 .service h3{
     color:#f439a2;
     font-weight: bold;
 }
 //portfolio
-.grid{
-
-}
 .portfolio{
     display: flex;
     flex-direction: row;
@@ -340,29 +335,30 @@ a {
     box-sizing: border-box;
     
 }
+
 .scrolling::-webkit-scrollbar {
     -webkit-appearance: none;
     width: 5px;
   }
-.scrolling:::-webkit-scrollbar-thumb {
+.scrolling::-webkit-scrollbar-thumb {
     border-radius: 5px;
     background-color: rgba(0, 0, 0, .5);
-    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, 0);
+    -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
   }
 .codepen{
     height: 100%;
     cursor: pointer;
     border: 3vw solid transparent;
     border-radius: 15%;
-    -webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
+    transition: 0.5s;
 }
-.codepen:hover{
-    -webkit-transform: scale(1.3);
-	transform: scale(1.3); 
+@media(min-width:50em){
+    .codepen:hover{
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2); 
+    }  
 }
+
 .seemore{
     text-align: center;
     font-size: 2em;
