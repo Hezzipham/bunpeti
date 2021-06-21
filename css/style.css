@@ -453,10 +453,11 @@ a {
 .codepen {
   height: 100%;
   cursor: pointer;
-  border: 10 solid transparent;
+  border: 3em solid transparent;
   border-radius: 15%;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  border: 1em solid transparent;
 }
 
 @media (max-width: 50em) {

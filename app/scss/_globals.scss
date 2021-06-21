@@ -348,12 +348,13 @@ a {
 .codepen{
     height: 100%;
     cursor: pointer;
-    border: 10 solid transparent;
+    border: 3em solid transparent;
     border-radius: 15%;
     transition: 0.5s;
     @media (max-width:50em){
         width: 12em;
     }
+    border: 1em solid transparent;
 }
 @media(min-width:50em){
     .codepen:hover{
