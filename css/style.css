@@ -29,18 +29,18 @@ header {
 }
 
 .textanimate {
-  max-width: 22em;
+  max-width: 60vw;
 }
 
 .textanimate h3 {
-  font-size: 1.5em;
+  font-size: 7vw;
   text-shadow: 3px 3px 3px black;
   color: #19d7f8;
 }
 
 .intro__title {
   font-family: 'Righteous', cursive;
-  font-size: 3.5em;
+  font-size: 10vw;
   font-weight: 400;
   color: #3f4346;
   -webkit-text-stroke: 2px #5f6263;
@@ -59,8 +59,8 @@ header {
   -webkit-text-stroke: 2px #5f6263;
   border-right: 3px solid #f439a2;
   overflow: hidden;
-  -webkit-animation: animate 4s linear infinite;
-          animation: animate 4s linear infinite;
+  -webkit-animation: animate 6s linear infinite;
+          animation: animate 6s linear infinite;
   text-shadow: 3px 3px 3px  #19d7f8;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
@@ -412,19 +412,19 @@ footer {
 }
 
 @-webkit-keyframes animate {
-  0% {
+  0%, 50% {
     width: 0;
   }
-  70% {
+  80% {
     width: 100%;
   }
 }
 
 @keyframes animate {
-  0% {
+  0%, 50% {
     width: 0;
   }
-  70% {
+  80% {
     width: 100%;
   }
 }

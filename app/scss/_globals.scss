@@ -24,22 +24,24 @@ header{
     height: 100vh;
 }
 .textanimate{
-    max-width: 22em;
+    max-width: 60vw;
 }
 .textanimate h3{
-    font-size: 1.5em;
+    font-size: 7vw;
     text-shadow:3px 3px 3px black;
     color: #19d7f8;
+
 
 }
 .intro__title{
     font-family: 'Righteous', cursive;
-    font-size:3.5em;
+    font-size:10vw;
     font-weight: 400;
     color: #3f4346;
     -webkit-text-stroke: 2px #5f6263;
     text-transform: uppercase;
     position: relative;
+
    
 }
 .intro__title::before{
@@ -54,7 +56,7 @@ header{
     -webkit-text-stroke: 2px #5f6263;
     border-right: 3px solid #f439a2;
     overflow: hidden;
-    animation: animate 4s linear infinite;
+    animation: animate 6s linear infinite;
     text-shadow:3px 3px 3px  #19d7f8;
     animation-fill-mode: forwards;
 
