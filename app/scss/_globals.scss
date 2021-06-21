@@ -247,6 +247,7 @@ a {
 }
 //services
 .services{
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -313,20 +314,22 @@ a {
 
 }
 .scrolling{
-    width: 95vw;
     height: 15em;
     display: flex;
     overflow-x: scroll !important;
     justify-content: space-between;
     background-color: transparent;
     padding: 1em;
+    box-sizing: border-box;
     
 }
 .codepen{
     width: 10em;
     height: 100%;
+    
     cursor: pointer;
-    border-right: 9px solid transparent;
+    border: 4px solid transparent;
+    border-radius: 15px;
 }
 .cpdepen:nth-of-type(2n){
     width: 60em;

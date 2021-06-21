@@ -308,6 +308,8 @@ a {
 }
 
 .services {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -406,7 +408,6 @@ a {
 }
 
 .scrolling {
-  width: 95vw;
   height: 15em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -417,13 +418,16 @@ a {
           justify-content: space-between;
   background-color: transparent;
   padding: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .codepen {
   width: 10em;
   height: 100%;
   cursor: pointer;
-  border-right: 9px solid transparent;
+  border: 4px solid transparent;
+  border-radius: 15px;
 }
 
 .cpdepen:nth-of-type(2n) {
