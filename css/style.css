@@ -28,19 +28,37 @@ header {
   height: 100vh;
 }
 
+.intro {
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  width: 100%;
+}
+
+.intro div {
+  font-size: 1.2em;
+  width: 90%;
+  position: absolute;
+  top: 30%;
+}
+
 .textanimate {
-  max-width: 60vw;
+  max-width: 18em;
 }
 
 .textanimate h3 {
-  font-size: 7vw;
+  font-size: 2em;
   text-shadow: 3px 3px 3px black;
   color: #19d7f8;
+  line-height: 0;
 }
 
 .intro__title {
   font-family: 'Righteous', cursive;
-  font-size: 10vw;
+  font-size: 3em;
   font-weight: 400;
   color: #3f4346;
   -webkit-text-stroke: 2px #5f6263;
@@ -101,21 +119,6 @@ section {
   .hide-for-desktop {
     display: none;
   }
-}
-
-.intro {
-  background-color: #3f4346;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-}
-
-.intro div {
-  font-size: 1.2em;
-  width: 90%;
-  position: absolute;
-  top: 30%;
 }
 
 .nav {
@@ -426,6 +429,52 @@ footer {
   }
   80% {
     width: 100%;
+  }
+}
+
+.bg {
+  -webkit-animation: slide 3s ease-in-out infinite alternate;
+          animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #3f4346 50%, #303235 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: .5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+
+.bg3 {
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    -webkit-transform: translateX(-25%);
+            transform: translateX(-25%);
+  }
+  100% {
+    -webkit-transform: translateX(25%);
+            transform: translateX(25%);
+  }
+}
+
+@keyframes slide {
+  0% {
+    -webkit-transform: translateX(-25%);
+            transform: translateX(-25%);
+  }
+  100% {
+    -webkit-transform: translateX(25%);
+            transform: translateX(25%);
   }
 }
 /*# sourceMappingURL=style.css.map */
