@@ -384,9 +384,8 @@ a {
 }
 
 .project {
-  -ms-flex-item-align: base;
-      -ms-grid-row-align: base;
-      align-self: base;
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
   width: 45%;
   min-width: 300px;
 }
@@ -407,7 +406,7 @@ a {
 
 .scrolling {
   width: 100%;
-  height: 10em;
+  height: 15em;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
