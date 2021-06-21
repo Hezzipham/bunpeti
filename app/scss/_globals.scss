@@ -299,6 +299,7 @@ a {
     align-self: baseline;
     width: 45%;
     min-width: 300px;
+    margin: 1em 0;
     @media (max-width:50em){
         width:90%;
     }
@@ -312,17 +313,20 @@ a {
 
 }
 .scrolling{
-    width: 100%;
+    width: 600%;
     height: 15em;
+    margin-left: -3em;
     display: flex;
     overflow-x: scroll !important;
     justify-content: space-evenly;
     background-color: transparent;
     padding: 1em;
+    flex-basis: 40em;
+    max-width:50em;
     
 }
 .scrolling a img{
-    width: 100%;
+    width: 80%;
     height: 100%;
 }
 //form 
