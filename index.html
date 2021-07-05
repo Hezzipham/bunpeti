@@ -129,18 +129,18 @@
             <h2 class="contact__title">Contact Me</h2>
             <div class=contact>
             
-            <form class="form" action="/d" method="get" enctype="text/plain" id="contactForm">
+            <form class="form" action="/action_page.php" method="get" enctype="text/plain" id="contactForm">
                 <div class="form__name">
                     <label for="name">Name:</label>
-                    <input type="text" class="form__input" id="name" placeholder="First And Last Name" name="name">
+                    <input type="text" class="form__input" id="name" placeholder="First And Last Name" name="name" aria-required="">
                 </div>
                 <div class="form__email">
                     <label for="email">Email:</label>
-                    <input type="email" class="form__input" id="email" placeholder="Enter email" name="email">
+                    <input type="email" class="form__input" id="email" placeholder="Enter email" name="email" aria-required="">
                 </div>
                 <div class="form-message">
                     <label for="message">Message:</label>
-                    <textarea class="form__input" rows="2" id="message" name="message"></textarea>
+                    <textarea class="form__input" rows="2" id="message" name="message" required></textarea>
                 </div>
                 <button class="btn" type="submit" name="submit">Send</button>
             </form>
