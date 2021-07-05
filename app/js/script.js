@@ -1,6 +1,6 @@
-var contactForm = document.querySelector('#contact');
+var contactForm = document.querySelector('#contactForm');
 contactForm.addEventListener('submit', function (e) {
     e.preventDefault();
     alert("Message sent!");
-    document.getElementById("contact").reset();
+    document.getElementById("contactForm").reset();
 });
