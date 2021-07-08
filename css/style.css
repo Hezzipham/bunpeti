@@ -368,7 +368,7 @@ a {
 .playlist h1 {
   margin: 0.5em;
   font-size: 3em;
-  color: #f7ede2;
+  color: white;
 }
 
 .playlist h3 {
@@ -471,8 +471,8 @@ a {
 .seemore {
   text-align: center;
   font-size: 2em;
-  -webkit-text-decoration: wavy underline;
-          text-decoration: wavy underline;
+  -webkit-text-decoration: #d8e2dc wavy underline;
+          text-decoration: #d8e2dc wavy underline;
 }
 
 .contact {
