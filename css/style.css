@@ -19,7 +19,7 @@ body {
   font-family: 'nunito', serif;
   font-size: 1.1em;
   background: linear-gradient(-60deg, #a3a6a7, #000000);
-  color: #b8bcc0;
+  color: white;
   overflow-x: hidden;
 }
 
@@ -51,7 +51,7 @@ header {
 }
 
 .textanimate {
-  max-width: 36em;
+  max-width: 30em;
 }
 
 .textanimate h3 {
