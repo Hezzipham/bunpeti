@@ -1,3 +1,5 @@
+
+
 html{
     font-size: 100%;
     box-sizing: border-box;
@@ -15,8 +17,8 @@ body{
     line-height: 1.3;
     font-family: 'nunito', serif;
     font-size: 1.1em;
-    background: linear-gradient(-60deg,#a3a6a7,#000000,);
-    color: white;
+    background: $lightbg;
+    color: $textcolor;
     overflow-x: hidden;
 }
 header{
@@ -25,7 +27,7 @@ header{
 }
 //intro
 .intro{
-    background-image: url(/images/header.jpg);
+    background-image: url();
     background-position: top right;
     background-repeat: no-repeat;
     background-size: cover;
@@ -49,7 +51,7 @@ header{
 .textanimate h3{
     font-size: 4rem;
     text-shadow:3px 3px 3px black;
-    color: #19d7f8;
+    color: $logoColor;
   text-align:justify;
 
 
@@ -77,19 +79,19 @@ header{
     left: 0;
     width: 50%;
     height: 100%;
-    color: #f439a2;
+    color: $h1text;
     -webkit-text-stroke: 2px #5f6263;
-    border-right: 3px solid #f439a2;
+    border-right: 3px solid $h1text;
     overflow: hidden;
     animation: animate 6s linear infinite;
-    text-shadow:3px 3px 3px  #19d7f8;
+    text-shadow:3px 3px 3px $logoColor;
     animation-fill-mode: forwards;
 
 }
 
 h2{
     font-size: 3rem;
-    border-bottom: 1px solid #19d7f8;
+    border-bottom: 1px solid $logoColor;
     width: 90%;
     margin-left: 5%;
     
@@ -127,7 +129,7 @@ padding:1rem 2rem;
     top: 0;
     width: 100%;
     padding: 1 1em;
-    background-color: black;
+    background-color:$lightbg;
     z-index: 500
 
 }
@@ -149,7 +151,7 @@ padding:1rem 2rem;
 }
 
 .logo{
-    color:#19d7f8;
+    color:$logoColor;
     font-size: 2em;
 }
 .nav__socialmedia>li{
@@ -167,7 +169,7 @@ a {
     color: inherit;
 }
 .nav__item:hover {
-    color: #19d7f8;
+    color: $logoColor;
 }
 //burger menu
 .checkbtn{
@@ -211,7 +213,7 @@ a {
         left:0%;
     }
     #menu:checked ~ .checkbtn{
-        color: #19d7f8;
+        color: $logoColor;
     }
 }
 
@@ -249,8 +251,8 @@ a {
 .hezziphoto img:hover{
     border-radius: 50%;
 }
-//services
-.services{
+//blog
+.blog-container{
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
@@ -261,13 +263,14 @@ a {
     }
 
 }
-.service{
+.playlist{
     border: 20px solid  transparent;
     border-radius: 10px;
     width: 20%;
     min-width: 300px;
     margin: 1em;
-    background-image: linear-gradient(#909597,#282b2b), radial-gradient(circle at top left, #fd00da,#19d7f8);
+    color: $lightbg;
+    background-image: linear-gradient($pink,$yellow), radial-gradient(circle at top left, $h1text,$logoColor);
     background-origin: border-box;
     background-clip: content-box,border-box;
     @media (max-width:50em){
@@ -277,22 +280,22 @@ a {
         width: 40%;
     }
 }
-.service p{
+.playlist p{
     padding: 0 1em;
+   
 }
-.service h1 {
-    color: white;
+.playlist h1 {
     margin: 0.5em;
     font-size: 3em;
+    color: $textcolor;
     
 }
 
-.service h3{
-    color:#f439a2;
+.playlist h3{
     font-weight: bold;
 }
 //portfolio
-.portfolio{
+.product{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -364,7 +367,7 @@ a {
 .seemore{
     text-align: center;
     font-size: 2em;
-    text-decoration: rgba(128, 128, 128, 0.719) wavy underline;
+    text-decoration: $green wavy underline;
 }
 
 //form 
@@ -421,7 +424,7 @@ form {
 
 }
 .btn:hover{
-    color:#f439a2;
+    color:$h1text;
 }
 footer{
     height: 10vh;
