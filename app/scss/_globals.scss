@@ -234,13 +234,14 @@ a {
     }
 }
 .hezziphoto{
-    min-width:30%;
+    position: relative;
 
 }
 .hezziphoto img{
+    max-width: 25em;
+    object-fit: cover;
     transition:0.5s;
-    border-radius: 15px;
-    box-shadow: 3px 0 2em $shadow1, -1em 0 1em $shadow2 ;
+    border-radius: 50%;
     @media (max-width: 50em){
         width: 90%;
         display: block;
@@ -249,7 +250,7 @@ a {
     }
 }
 .hezziphoto img:hover{
-    border-radius: 50%;
+    border-radius: 15px;
 }
 //blog
 .blog-container{
@@ -294,7 +295,7 @@ a {
 .playlist h3{
     font-weight: bold;
 }
-//portfolio
+//product
 .product{
     display: flex;
     flex-direction: row;
@@ -311,17 +312,18 @@ a {
         width:90%;
     }
 }
-.project a img{
-    height: 70%;
-    max-height: 60vh;
-    max-width: 95%;
-    border-radius: 10px;
-    box-shadow: 3px 0 2em $shadow1, -1em 0 1em $shadow2;
-    -webkit-transform: scale(1);
-	transform: scale(1);
-	-webkit-transition: .3s ease-in-out;
-	transition: .3s ease-in-out;
-}
+.videoWrapper {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+  }
+  .videoWrapper iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
 
 .project a img:hover{
     -webkit-transform: scale(1.1);
@@ -348,17 +350,17 @@ a {
     background-color: rgba(0, 0, 0, .5);
     -webkit-box-shadow: 0 0 1px rgba(255, 255, 255, .5);
   }
-.codepen{
+.scrolling a img{
     height: 100%;
     cursor: pointer;
     border: 3em solid transparent;
     border-radius: 15%;
     transition: 0.5s;
-    max-width: 15em;
+    max-width: 20em;
     border: 1em solid transparent;
 }
 @media(min-width:80em){
-    .codepen:hover{
+    .scrolling a img:hover{
         -webkit-transform: scale(1.2);
         transform: scale(1.2); 
     }  
@@ -367,7 +369,6 @@ a {
 .seemore{
     text-align: center;
     font-size: 2em;
-    text-decoration: $green wavy underline;
 }
 
 //form 
