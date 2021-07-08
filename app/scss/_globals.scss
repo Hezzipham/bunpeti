@@ -102,7 +102,7 @@ padding:1rem 2rem;
     padding: 0 2em;}
 }
 ::selection{
-    background-color:rgb(200, 4, 226);
+    background-color:$blue;
 }
 .hide-for-mobile{
     @media (max-width: 50em){
@@ -240,7 +240,7 @@ a {
 .hezziphoto img{
     transition:0.5s;
     border-radius: 15px;
-    box-shadow: 3px 0 2em rgba(200, 4, 226, 0.5), -1em 0 1em rgba(255, 0, 0,0.5) ;
+    box-shadow: 3px 0 2em $shadow1, -1em 0 1em $shadow2 ;
     @media (max-width: 50em){
         width: 90%;
         display: block;
@@ -316,7 +316,7 @@ a {
     max-height: 60vh;
     max-width: 95%;
     border-radius: 10px;
-    box-shadow: 3px 0 2em rgba(255, 0, 0,0.5), -1em 0 1em rgba(200, 4, 226, 0.5);
+    box-shadow: 3px 0 2em $shadow1, -1em 0 1em $shadow2;
     -webkit-transform: scale(1);
 	transform: scale(1);
 	-webkit-transition: .3s ease-in-out;
@@ -388,7 +388,7 @@ form {
     padding: 2em;
     margin-bottom: 2em;
     border-radius: 15px;
-    box-shadow: 3px 0 2em rgba(200, 4, 226, 0.5), -1em 0 1em rgba(255, 0, 0,0.5) ;
+    box-shadow: 3px 0 2em $shadow1, -1em 0 1em $shadow2 ;
 }
 .form__input{
     width: 100%;
@@ -404,7 +404,7 @@ form {
     margin: auto;
     margin-bottom: 2em;
     opacity: 0.8;
-    box-shadow: 3px 0 2em rgba(200, 4, 226, 0.5), -1em 0 1em rgba(255, 0, 0,0.5) ;
+    box-shadow: 3px 0 2em $shadow1, -1em 0 1em $shadow2 ;
 }
 
 //button
