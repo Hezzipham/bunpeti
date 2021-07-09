@@ -375,10 +375,9 @@ a {
   padding: 0 1em;
 }
 
-.playlist h1 {
-  margin: 0.5em;
-  font-size: 3em;
-  color: white;
+.playlist img {
+  width: 50%;
+  height: auto;
 }
 
 .playlist h3 {
