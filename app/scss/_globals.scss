@@ -216,42 +216,59 @@ a {
         color: $logoColor;
     }
 }
+//About us
 
-//Aboutme
-
-.resume{
-    display: flex;
-    flex-wrap: wrap-reverse;
-    justify-content: space-evenly;
-}
-.abouthezzi{
-    flex:1;
-    min-width: 65%;
-    padding: 0 2%;
-    @media(min-width: 50.01em){
-        max-width: 40%;
-        margin-left: 3%;
-    }
-}
-.hezziphoto{
+.aboutus{
     position: relative;
+    width: 100%;
+    padding: 3em;
+}
+.circle{
+position: relative;
+overflow: hidden;
+@media (max-width: 50em){
+    display: flex;
+}
 
 }
-.hezziphoto img{
-    max-width: 25em;
+.circle img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    transition:0.5s;
+}
+
+.circle.img1{
+    width: 25em;
+    height: 25em;
+    float: right;
     border-radius: 50%;
+    margin: 2em;
+    shape-outside: circle();
     @media (max-width: 50em){
-        width: 90%;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        width: 15em;
+        height: 15em;
+        margin: 1em;
+
     }
+   
 }
-.hezziphoto img:hover{
-    border-radius: 15px;
+.circle.img2{
+    width: 15em;
+    height: 15em;
+    float: left;
+    border-radius: 50%;
+    margin: 2em;
+    shape-outside: circle();
+    @media (max-width: 60em){
+        display: none;
+    }
+  
 }
+
+
 //blog
 .blog-container{
     box-sizing: border-box;
@@ -431,5 +448,4 @@ footer{
     height: 10vh;
     text-align: center;
     font-weight: 600;
-
 }
