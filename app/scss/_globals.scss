@@ -372,7 +372,8 @@ overflow: hidden;
     cursor: pointer;
     border: 3em solid transparent;
     border-radius: 15%;
-    transition: 0.5s;  
+    transition: 0.5s;
+    max-width: 20em;
     border: 1em solid transparent;
 }
 @media(min-width:80em){

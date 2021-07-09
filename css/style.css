@@ -469,6 +469,7 @@ a {
   border-radius: 15%;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  max-width: 20em;
   border: 1em solid transparent;
 }
 
