@@ -481,7 +481,6 @@ a {
 
 .seemore {
   text-align: center;
-  font-size: 2em;
   -webkit-text-decoration: underline dotted;
           text-decoration: underline dotted;
 }
@@ -529,11 +528,6 @@ form {
   opacity: 0.8;
   -webkit-box-shadow: 3px 0 2em #ff928b, -1em 0 1em #ffac81;
           box-shadow: 3px 0 2em #ff928b, -1em 0 1em #ffac81;
-}
-
-.qa {
-  width: 10em;
-  border-radius: 10px;
 }
 
 .btn {
