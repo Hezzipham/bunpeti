@@ -52,7 +52,7 @@ header{
     font-size: 4rem;
     text-shadow:3px 3px 3px black;
     color: $logoColor;
-  text-align:justify;
+    text-align:justify;
 
 
 }
@@ -385,6 +385,7 @@ overflow: hidden;
 .seemore{
     text-align: center;
     font-size: 2em;
+    text-decoration: underline dotted;
 }
 
 //form 
@@ -425,11 +426,17 @@ form {
 }
 
 //button
+.qa{
+    width: 10em;
+    border-radius: 10px; 
+}
+
 .btn{
     border: 2px solid rgba(128, 128, 128, 0.712);
     border-radius: 10px;
     display: block;
-    width: 5em;
+    width: 8em;
+    height: 5em;
     margin-left: auto;
     margin-right: auto; 
     font-size: 1rem;
@@ -440,7 +447,7 @@ form {
     font-family: inherit;
 
 }
-.btn:hover{
+.btn:hover, .qa:hover{
     color:$h1text;
 }
 footer{
