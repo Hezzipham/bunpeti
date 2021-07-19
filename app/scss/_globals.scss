@@ -25,71 +25,6 @@ header{
     width: 100%;
     height: 100vh;
 }
-//intro
-.intro{
-    background-image: url();
-    background-position: top right;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height:100%;
-    width:100%;
-    div{
-        font-size: 1.2em;
-        width: 90%;
-        position: absolute;
-        top: 40%;
-        @media(min-width:50em){
-            margin-left: 5em;
-        }
-}
-
-  
-}
-.textanimate{
-    max-width: 30em;
-    h3{
-        font-size: 4rem;
-        text-shadow:3px 3px 3px black;
-        color: $logoColor;
-        text-align:justify;
-    
-    
-    }
-
-}
-
-.intro__title{
-    font-family: 'Righteous', cursive;
-    font-size:5.5em;
-    font-weight: 400;
-    color: transparent;
-    -webkit-text-stroke: 2px white;
-    text-transform: uppercase;
-    position: relative;
-    line-height: 1;
-    &::before{
-
-        content: attr(data-text);
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 50%;
-        height: 100%;
-        color: $h1text;
-        -webkit-text-stroke: 2px #5f6263;
-        border-right: 3px solid $h1text;
-        overflow: hidden;
-        animation: animate 6s linear infinite;
-        text-shadow:3px 3px 3px $logoColor;
-        animation-fill-mode: forwards;
-    
-    }
-}
-@media(max-width:50em){
-    .intro__title{font-size:14vw}
-    .textanimate h3{font-size: 7vw;
-    }
-}
 
 
 h2{
@@ -118,8 +53,36 @@ padding:1rem 2rem;
     }
 
     }
+ul,li{
+    display: inline;
+    margin:0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
+//intro
+.intro{
+    background-image: url();
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:100%;
+    width:100%;
+    div{
+        font-size: 1.2em;
+        width: 90%;
+        position: absolute;
+        top: 40%;
+        @media(min-width:50em){
+            margin-left: 5em;
+        }
+}
 
+  
+}
 
 //navbar
 .nav{
@@ -136,8 +99,6 @@ padding:1rem 2rem;
     z-index: 500
 
 }
-
-
 
 .nav__list{
     display: flex;
@@ -163,15 +124,7 @@ padding:1rem 2rem;
     cursor: pointer;
 }
 
-ul,li{
-    display: inline;
-    margin:0;
-    padding: 0;
-}
-a {
-    text-decoration: none;
-    color: inherit;
-}
+
 .nav__item:hover {
     color: $logoColor;
 }
